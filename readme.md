@@ -2,20 +2,31 @@
 
 ### Initial Setup
 
-Clone the repo (requirements: git installed)
+This repo is written in Typescript, a strongly-typed version of Javascript, and uses tsc (typescript compile) and node (npm / node) programs to generate the scripts and run.
 
+##### Clone the repo (requirements: git installed)
 
+In a terminal:
+
+git clone https://github.com/alex0pheiffer/DiscordJS14_training.git
+
+##### Install required dependencies (requirements: node installed, js installed)
+
+In the terminal, inside the cloned directory (DiscordJS14_training):
+
+npm install -g npm@latest
+
+npm install -g typescript
+
+npm i
 
 ### Complile & Run
 
-directory: D:/Important_Things/Applications/DiscordJS/BarbieTrivia/
+In the terminal, in the cloned directory (DiscordJS14_training)
 
 tsc -p tsconfig.json    // build the typescript
 
 node ./build/main.js
-
-
-
 
 ## Debugging Notes
 
