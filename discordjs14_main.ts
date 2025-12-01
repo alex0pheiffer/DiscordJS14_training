@@ -1,6 +1,7 @@
 const path = require('node:path');
 import { ButtonInteraction, CacheType, Channel, ChatInputCommandInteraction, Client, Collection, EmbedBuilder, Events, GatewayIntentBits, Interaction, PermissionsBitField, StringSelectMenuInteraction, TextChannel } from "discord.js";
 import * as fs from "fs";
+import { Command, SlashCommand } from "./command_interface";
 require('dotenv').config() // get our passwords and such
 
 const BOT_VERSION = "0"
