@@ -20,13 +20,39 @@ npm install -g typescript
 
 npm i
 
+##### Create your .env file
+
+Under the main directory, create a new file ".env"
+
+Add the following parameters:
+
+TOKEN=""
+
+CLIENT_ID=""
+
+##### Create your application on discord developer
+
+https://discord.com/developers/applications
+
+Create a new application with the name of your bot.
+
+Copy the application_id into CLIENT_ID (under general) and the token into TOKEN (under bot).
+
+##### Compile the typescript
+
+tsc -p tsconfig.json
+
+##### Run the command to create the existing commands
+
+TBD.
+
 ### Complile & Run
 
 In the terminal, in the cloned directory (DiscordJS14_training)
 
-tsc -p tsconfig.json    // build the typescript
+tsc -p tsconfig.json
 
-node ./build/main.js
+node ./build/discordjs14_main.js
 
 ## Debugging Notes
 
@@ -38,3 +64,4 @@ It helps knowing the primary causes of DiscordAPIError[10062]: Unknown interacti
     - Wrong interaction object inside a collector.
     - Two processes handling the same command (the first consumes the interaction, so it won't be valid for the other instance)
     * Note: you cannot defer modal or autocomplete value responses
+
